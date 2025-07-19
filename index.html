@@ -1,0 +1,42 @@
+<!-- index.html --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cvs.Electric</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen">
+    <h1>🔒 UPPCL - Details Finder</h1>
+    <p>Disclaimer🚨</p>
+    <p>Private Access Only</p>
+    <input type="text" id="login-id" placeholder="Enter ID">
+    <input type="password" id="login-password" placeholder="Enter Password">
+    <label><input type="checkbox" id="remember-me"> Remember Me</label>
+    <button onclick="login()">Login</button>
+    <p id="login-error"></p>
+  </div>  <div id="main-content" style="display: none;">
+    <header>
+      <h1>UPPCL - Details Finder</h1>
+      <h3>Only for Private Use</h3>
+    </header><section id="search-section">
+  <label for="search-type">Search By:</label>
+  <select id="search-type">
+    <option value="SERIAL_NBR">SERIAL_NBR</option>
+    <option value="NAME">NAME</option>
+    <option value="MOBILE_NO">MOBILE_NO</option>
+    <option value="ACCT_ID">ACCT_ID</option>
+  </select>
+  <input type="text" id="search-input" placeholder="Enter value">
+  <button onclick="searchData()">Search</button>
+  <button onclick="refreshPage()">Refresh</button>
+</section>
+
+<section id="results"></section>
+
+<footer>
+  <p>Credit: Aditya Shukla | Contact: adityashukla1sdr@gmail.com</p>
+</footer>
+
+  </div>  <script src="script.js"></script></body>
+</html>
